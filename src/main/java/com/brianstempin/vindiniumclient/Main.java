@@ -66,6 +66,7 @@ public class Main {
         runner.call();
     }
     private static void runSimpleBot(String key, GenericUrl gameUrl, String botClass) throws Exception {
+        System.out.println("Class is " + botClass);
         Class<?> clazz = Class.forName(botClass);
         Class<? extends SimpleBot> botClazz = clazz.asSubclass(SimpleBot.class);
         SimpleBot bot = botClazz.newInstance();

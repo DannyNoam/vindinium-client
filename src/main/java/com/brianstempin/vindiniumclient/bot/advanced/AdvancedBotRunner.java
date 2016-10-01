@@ -58,6 +58,7 @@ public class AdvancedBotRunner implements Callable<GameState> {
             response = request.execute();
             gameState = response.parseAs(GameState.class);
             logger.info("Game URL: {}", gameState.getViewUrl());
+            System.out.println("Game URL: " + gameState.getViewUrl());
 
             advancedGameState = new AdvancedGameState(gameState);
 

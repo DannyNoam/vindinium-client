@@ -28,9 +28,9 @@ public class SimpleBotRunner implements Callable<GameState> {
 
     private final ApiKey apiKey;
     private final GenericUrl gameUrl;
-    private final SimpleBot bot;
+    private final Bot bot;
 
-    public SimpleBotRunner(ApiKey apiKey, GenericUrl gameUrl, SimpleBot bot) {
+    public SimpleBotRunner(ApiKey apiKey, GenericUrl gameUrl, Bot bot) {
         this.apiKey = apiKey;
         this.gameUrl = gameUrl;
         this.bot = bot;
